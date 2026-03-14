@@ -230,6 +230,14 @@
     </span>
 
   
+    <span id="/2025/01/04/2025-01-04-%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8Emcpi%E7%9A%84mc%E7%8E%A9%E5%AE%B6%E8%BF%BD%E8%B8%AA%E7%A8%8B%E5%BA%8F/" class="post-meta-item twikoo_visitors" data-flag-title="一个基于mcpi的mc玩家追踪程序" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
 </div>
 
         </div>
@@ -362,6 +370,7 @@
 
 
 
+    <div class="comments"><div id="twikoo-comments"></div></div>
 </div>
   </main>
 
@@ -397,6 +406,27 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"https://twikoo.bg4jts.cn/","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
 
 </body>
 </html>
