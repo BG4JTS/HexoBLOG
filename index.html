@@ -63,6 +63,12 @@
 
 
 
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
@@ -288,9 +294,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2026-03-01 10:00:00 / 修改时间：17:39:48" itemprop="dateCreated datePublished" datetime="2026-03-01T10:00:00+08:00">2026-03-01</time>
+      <time title="创建时间：2026-03-01 10:00:00" itemprop="dateCreated datePublished" datetime="2026-03-01T10:00:00+08:00">2026-03-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-03-14 17:42:26" itemprop="dateModified" datetime="2026-03-14T17:42:26+08:00">2026-03-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -396,7 +408,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-01 10:24:08" itemprop="dateModified" datetime="2026-03-01T10:24:08+08:00">2026-03-01</time>
+      <time title="修改时间：2026-03-14 17:53:08" itemprop="dateModified" datetime="2026-03-14T17:53:08+08:00">2026-03-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -458,7 +470,7 @@
 </ul>
 </blockquote>
 <p>获取的唱片可在唱片机里播放<br>获取一个唱片默认消耗一个钻石 服务器后台可在📁config-&gt;just_music.json进行配置</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;discCostItem&quot;</span><span class="punctuation">:</span> <span class="string">&quot;minecraft:diamond&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;discCostCount&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;discCostItem&quot;</span><span class="punctuation">:</span> <span class="string">&quot;minecraft:diamond&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;discCostCount&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
 <p>分别是物品id 和所需物品数量</p>
 <blockquote>
 <p>-<strong>添加mod后首次运行服务器just_music.json才会生成</strong><br>{: .prompt-tip }</p>
@@ -514,13 +526,13 @@
 <p>只要是适用于minecraft1.21.11的fabric_api与fabric理论上都能用</p>
 <h4 id="1-添加mod"><a href="#1-添加mod" class="headerlink" title="1.添加mod"></a>1.添加mod</h4><p>将mod添加至mod文件夹重启一次服务器</p>
 <h4 id="2-设置server-properties"><a href="#2-设置server-properties" class="headerlink" title="2.设置server.properties"></a>2.设置server.properties</h4><p>打开<strong>server.properties</strong><br>设置</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">require-resource-pack</span>=<span class="string">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resource-pack</span>=<span class="string">https\://gitee.com/dfddcv/music_packs/raw/master/data.zip</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resource-pack-id</span>=<span class="string"></span></span><br><span class="line"></span><br><span class="line"><span class="attr">resource-pack-prompt</span>=<span class="string">&quot;建议你安装它 否则你将无法在服务器内使用[哈基米唱片]&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resource-pack-sha1</span>=<span class="string">6aa4ad153ddbf432cf140c7fa48a039d81391795</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">require-resource-pack</span>=<span class="string">true</span></span><br><span class="line"><span class="attr">resource-pack</span>=<span class="string">https\://gitee.com/dfddcv/music_packs/raw/master/data.zip</span></span><br><span class="line"><span class="attr">resource-pack-id</span>=<span class="string"></span></span><br><span class="line"><span class="attr">resource-pack-prompt</span>=<span class="string">&quot;建议你安装它 否则你将无法在服务器内使用[哈基米唱片]&quot;</span></span><br><span class="line"><span class="attr">resource-pack-sha1</span>=<span class="string">6aa4ad153ddbf432cf140c7fa48a039d81391795</span></span><br></pre></td></tr></table></figure>
 <p>这样设置 这是自定义唱片的资源包挂载到gitee.com方便国内访问</p>
 <h4 id="3-添加数据包"><a href="#3-添加数据包" class="headerlink" title="3.添加数据包"></a>3.添加数据包</h4><p>打开📁world-&gt;datapacks</p>
 <p>将数据包<strong>music_datapack.zip</strong>放入其中这是自定义唱片的数据包<br>再次重启服务器</p>
 <h4 id="4-更多配置"><a href="#4-更多配置" class="headerlink" title="4.更多配置"></a>4.更多配置</h4><p>打开📁<strong>config-&gt;just_music.json</strong>这是mod的配置文件</p>
 <p>默认配置：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableToolsCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableKillSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableDemandSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableGiveSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableLjtSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableMessageSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableTpSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;enableSetToolsSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;discCostItem&quot;</span><span class="punctuation">:</span> <span class="string">&quot;minecraft:diamond&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line"><span class="attr">&quot;discCostCount&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;enableToolsCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableKillSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableDemandSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableGiveSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableLjtSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableMessageSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableTpSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;enableSetToolsSubCommand&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;discCostItem&quot;</span><span class="punctuation">:</span> <span class="string">&quot;minecraft:diamond&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;discCostCount&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>enable…Command</strong>是控制是否开启命令</p>
 <p><strong>discCostItem</strong>  <strong>discCostCount</strong></p>
@@ -590,7 +602,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-01 10:25:02" itemprop="dateModified" datetime="2026-03-01T10:25:02+08:00">2026-03-01</time>
+      <time title="修改时间：2026-03-14 17:52:08" itemprop="dateModified" datetime="2026-03-14T17:52:08+08:00">2026-03-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -736,7 +748,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-01 10:24:06" itemprop="dateModified" datetime="2026-03-01T10:24:06+08:00">2026-03-01</time>
+      <time title="修改时间：2026-03-14 17:51:48" itemprop="dateModified" datetime="2026-03-14T17:51:48+08:00">2026-03-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -779,12 +791,9 @@
 <h4 id="Linux-MacOS"><a href="#Linux-MacOS" class="headerlink" title="Linux &#x2F; MacOS"></a>Linux &#x2F; MacOS</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install mcpi</span><br></pre></td></tr></table></figure>
 
 <h3 id="开服工具"><a href="#开服工具" class="headerlink" title="开服工具"></a>开服工具</h3><p>我是使用mc服务器的所以需要服务器<br>这里选用MSL作为开服工具</p>
-<blockquote>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://www.mslmc.cn/">MSL官方网站</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/MSLTeam/MSL">MSL GitHub</a><br>{: .prompt-tip }</li>
-</ul>
-</blockquote>
+<div class="note info"><p><a target="_blank" rel="noopener" href="https://www.mslmc.cn/">MSL官方网站</a><br><a target="_blank" rel="noopener" href="https://github.com/MSLTeam/MSL">MSL GitHub</a></p>
+</div>
+
 <h4 id="开服"><a href="#开服" class="headerlink" title="开服"></a>开服</h4><p>选择最新版本的游戏，使用插件服。</p>
 <p>开服后打开</p>
 <p>Server\plugins</p>
@@ -793,13 +802,13 @@
 <li><a target="_blank" rel="noopener" href="https://github.com/zhuowei/RaspberryJuice">GitHub</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/raspberryjuice.22724/">spigot</a></li>
 </ul>
-<blockquote>
-<p>raspberryjuice项目目前已停止维护!<br>  {: .prompt-danger }</p>
-</blockquote>
+<div class="note danger"><p>raspberryjuice项目目前已停止维护!</p>
+</div>
+
 <p><strong>开服成功了</strong>awa</p>
-<h3 id="我的项目-MC-Player-Tracker"><a href="#我的项目-MC-Player-Tracker" class="headerlink" title="我的项目 MC-Player-Tracker"></a>我的项目 MC-Player-Tracker</h3><blockquote>
-<p><strong>本项目使用AIGC</strong><br>  {: .prompt-danger }</p>
-</blockquote>
+<h3 id="我的项目-MC-Player-Tracker"><a href="#我的项目-MC-Player-Tracker" class="headerlink" title="我的项目 MC-Player-Tracker"></a>我的项目 MC-Player-Tracker</h3><div class="note danger"><p><strong>本项目使用AIGC</strong></p>
+</div>
+
 <h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p>在游戏中记录坐标，然后以图表的形式展现:</p>
 <p><img src="/assets/img/2025/01-04/a.png" alt="示例"></p>
 <p>将光标置于记录点上，还有详细信息</p>
